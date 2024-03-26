@@ -171,12 +171,13 @@ h1,h2,h3,h4,h5
 /* start home */       
 #home
 	{
-        background: url('../images/home-bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 120px;
-        padding-bottom: 140px;
+        padding-bottom: 130px;
         text-align: center;
+        position: relative;
+        overflow: hidden;
 	}
 #home h1
     {
@@ -417,4 +418,15 @@ footer hr
     {
         color: #D43F52;
     }
-/* end social icon */
+/* 사용자 지정 추가 */
+#video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+}
